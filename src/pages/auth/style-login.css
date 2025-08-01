@@ -1,0 +1,270 @@
+.container-login{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+.container-form-login,
+.container-img-login {
+  flex: 2; /* O puedes usar porcentajes si necesitas control fino */
+}
+.container-form-login{
+    /* width: 977px; */
+    width: 50%;
+    height: 100vh;
+    /* position: relative; */
+    top: 0;
+    border-top: 4rem solid #1A2246;
+}
+.container-logo-login{
+    width: 70%;
+    margin: auto;
+    /* position: fixed;
+    top: 1rem;
+    left: 8.5rem;  */
+    /* width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; */
+}
+.container-form-login .box-form-login .form{
+    transform: translateY(-2rem);
+}
+.container-login .container-form-login .container-logo-login{
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
+    top: 10rem;
+    transform: translateY(-2.4rem);
+}
+.container-login .container-form-login .container-logo-login .img-logo-login{
+    width: 12%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #CF950B;
+}
+.bar-login-top{
+    width: 100%;
+    height: 5%;
+    padding: 0.5rem;
+    background-color: #CF950B;
+}
+.container-login .container-form-login .bar-login-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 42%;
+    height: 3%;
+    padding: 0.5rem;
+    transform: translateX(7.5rem);
+    background-color: #CF950B;
+}
+
+.container-login .container-form-login .box-form-login{
+    width: 70%;
+    margin: auto;
+    margin-top: 0.5rem;
+    
+}
+.container-login .container-img-login{
+    max-width: 40%;
+    /* height: 100vh; */
+}
+.container-login .container-img-login .img-login img{
+    width: 100%;
+    height: 100vh;
+}
+/* title login */
+.container-title-login{
+    margin-bottom: 4rem;
+}
+.container-login .title-form-login{
+    color: #2444CD;
+}
+.container-login .subtitle-form-login{
+    color: #575757;
+}
+.container-switch{
+    display: flex;
+    align-items: center;
+    color: #717171;
+}
+/* estilo para el boton */
+.box-form-login .MuiButton-contained{
+     width: 100%;
+    /* padding: 10px; */
+    /* margin-top: 1rem; */
+    background: #2444CD;
+    /* color: white !important; */
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+box-form-login .MuiButton-contained:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1080px) {
+    .container-form-login{
+        /* width: 977px; */
+        width: 70%;
+        height: 100vh;
+        /* position: relative; */
+        top: 0;
+        border-top: 4rem solid #1A2246;
+    }
+    .container-login .container-form-login .bar-login-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 40.6%;
+        height: 3%;
+        padding: 0.5rem;
+        transform: translateX(6rem);
+        background-color: #CF950B;
+    }
+    .container-login .container-img-login{
+        max-width: 28rem;
+        /* height: 100vh; */
+    }
+    .container-login .container-form-login .container-logo-login{
+        display: flex;
+        align-items: center;
+        /* position: fixed; */
+        top: 10rem;
+        transform: translateY(-2.2rem);
+    }
+    .container-login .container-form-login .container-logo-login .img-logo-login{
+        width: 4rem;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #CF950B;
+    }
+    .container-login .container-form-login .container-logo-login .img-logo-login img{
+        width: 100%;
+    }
+    /* title login */
+    .container-login .title-form-login {
+        font-size: 22px;
+    }
+    .container-login .subtitle-form-login {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .container-form-login{
+        /* width: 977px; */
+        width: 50%;
+        height: 100vh;
+        /* position: relative; */
+        top: 0;
+        border-top: 4rem solid #1A2246;
+    }
+    .container-login .container-img-login{
+        max-width: 50%;
+        /* height: 100vh; */
+    }
+    .container-login .container-form-login .bar-login-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 35%;
+        height: 3%;
+        padding: 0.5rem;
+        transform: translateX(3.5rem);
+        background-color: #CF950B;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .container-form-login{
+        /* width: 977px; */
+        width: 100%;
+        height: 100vh;
+        /* position: relative; */
+        top: 0;
+        border-top: 4rem solid #1A2246;
+    }
+    .container-login .container-img-login{
+        display: none;
+        /* height: 100vh; */
+    }
+    .container-login .container-form-login .container-logo-login{
+        display: flex;
+        align-items: center;
+        /* position: fixed; */
+        top: 10rem;
+        transform: translateY(-2.3rem);
+    }
+    .container-login .container-form-login .bar-login-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        height: 3%;
+        padding: 0.5rem;
+        transform: translateX(6.5rem);
+        background-color: #CF950B;
+    }
+     /* title login */
+    .container-login .title-form-login {
+        font-size: 25px;
+    }
+    .container-login .subtitle-form-login {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .container-login .container-form-login .container-logo-login{
+        display: flex;
+        align-items: center;
+        /* position: fixed; */
+        top: 10rem;
+        transform: translateY(-2.11rem);
+    }
+    .container-login .container-form-login .bar-login-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 70.5%;
+        height: 3%;
+        padding: 0.5rem;
+        transform: translateX(4.2rem);
+        background-color: #CF950B;
+    }
+     /* title login */
+    .container-login .title-form-login {
+        font-size: 20px;
+    }
+    .container-login .subtitle-form-login {
+        font-size: 12px;
+    }
+    .container-login .container-switch p {
+        font-size: 14px;
+    }
+    .container-login .link-login {
+        font-size: 10px;
+    }
+}
+@media (max-width: 350px) {
+    .container-login .container-form-login .container-logo-login{
+        display: flex;
+        align-items: center;
+        /* position: fixed; */
+        top: 10rem;
+        transform: translateY(-1.8rem);
+    }
+    .container-login .container-form-login .bar-login-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        height: 3%;
+        padding: 0.5rem;
+        transform: translateX(2.8rem);
+        background-color: #CF950B;
+    }
+     /* title login */
+    .container-login .title-form-login {
+        font-size: 18px;
+    }
+    .container-login .subtitle-form-login {
+        font-size: 14px;
+    }
+    .container-login .container-switch p {
+        font-size: 14px;
+    }
+}
